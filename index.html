@@ -1,47 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lady Raven Noir | FFXIV Gallery</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Lady Raven Noir</h1>
-    <p>Whispers from the Void</p>
-  </header>
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  background-color: #0a0a0a;
+  color: #ccc;
+  text-align: center;
+}
 
-  <section class="set">
-    <div class="banner">
-      <img src="images/banner1.jpg" alt="Banner 1">
-    </div>
-    <div class="row">
-      <img src="images/glam1.jpg" alt="">
-      <img src="images/glam2.jpg" alt="">
-      <img src="images/glam3.jpg" alt="">
-    </div>
-    <div class="row">
-      <img src="images/glam4.jpg" alt="">
-      <img src="images/glam5.jpg" alt="">
-      <img src="images/glam6.jpg" alt="">
-    </div>
-  </section>
+header {
+  padding: 2rem 0;
+  background-color: #111;
+  border-bottom: 1px solid #222;
+}
 
-  <section class="set">
-    <div class="banner">
-      <img src="images/banner2.jpg" alt="Banner 2">
-    </div>
-    <div class="row">
-      <img src="images/glam7.jpg" alt="">
-      <img src="images/glam8.jpg" alt="">
-      <img src="images/glam9.jpg" alt="">
-    </div>
-    <div class="row">
-      <img src="images/glam10.jpg" alt="">
-      <img src="images/glam11.jpg" alt="">
-      <img src="images/glam12.jpg" alt="">
-    </div>
-  </section>
-</body>
-</html>
+header h1 {
+  font-size: 3rem;
+  color: #b20053;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+.set {
+  margin: 3rem 0;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.row img {
+  width: 30%;
+  height: auto;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(178, 0, 83, 0.3);
+  transition: transform 0.3s;
+}
+
+.row img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .row img {
+    width: 90%;
+  }
+}
