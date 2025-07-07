@@ -1,10 +1,13 @@
 body {
   margin: 0;
-  font-family: 'Garamond', serif;
+  font-family: 'UnifrakturCook', 'Garamond', serif;
   background-color: #0a0a0a;
   color: #ccc;
   text-align: center;
+  cursor: crosshair;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
 header {
   padding: 2rem 0;
